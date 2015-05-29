@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="storeApp">
 <head>
     <meta charset="UTF-8">
     <title>SPA Store</title>
@@ -32,6 +32,9 @@
     </script>
 </head>
 <body>
-    
+    <a href="#/">Dashboard</a> | <a href="#/products">Products</a> | <a href="#/orders">Orders</a> | <a href="#/customers">Customers</a> | <a href="#/settings">Settings</a>
+    <div ng-view="">
+        
+    </div>
 </body>
 </html>
