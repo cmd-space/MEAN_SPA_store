@@ -1,0 +1,9 @@
+<div ng-controller="dashboardController">
+    <span class="inline">
+        <input type="text" ng-model="dash" placeholder="search..."> <br>
+        <button ng-click="searchDash()">Filter</button>
+    </span>
+    <ul class="products">
+        <li ng-repeat="product in products" ng-bind="product"><img src="./images/placeholder.jpg" alt="sick ass {{product}}!"></li>
+    </ul>
+</div>

@@ -10,8 +10,8 @@
         var storeApp = angular.module('storeApp', ['ngRoute']);
         storeApp.config(function($routeProvider){
             $routeProvider
-                .when('/',{
-                    templateUrl: 'index.html'
+                .when('/', {
+                    templateUrl: 'partials/dashboard.html'
                 })
                 .when('/products',{
                     templateUrl: 'partials/products.html'
@@ -34,7 +34,6 @@
 <body>
     <a href="#/">Dashboard</a> | <a href="#/products">Products</a> | <a href="#/orders">Orders</a> | <a href="#/customers">Customers</a> | <a href="#/settings">Settings</a>
     <div ng-view="">
-        
     </div>
 </body>
 </html>
